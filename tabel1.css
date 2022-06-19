@@ -1,0 +1,24 @@
+table,th,td{
+    width: 8px;
+    margin: 1px;;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    
+}
+body
+		{
+		    counter-reset: Serial;          
+		}
+
+		table
+		{
+		    border-collapse: separate;
+		}
+
+		tr td:first-child:before
+		{
+		  counter-increment: Serial;      
+		  content: counter(Serial); 
+		}
